@@ -1,0 +1,25 @@
+{
+  "name": "pptx-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/iobit-rd/pptx-parser.git",
+  "author": "lys <lys219911@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "dependencies": {
+    "billboard.js": "^3.9.1",
+    "d3": "^7.8.5",
+    "dingbat-to-unicode": "^1.0.1",
+    "html2canvas": "git+https://github.com/PDFTron/html2canvas.git#pdftron-alpha10",
+    "jquery": "^3.7.0",
+    "jszip": "^3.10.1",
+    "tinycolor2": "^1.6.0",
+    "txml": "^5.1.1"
+  }
+}
