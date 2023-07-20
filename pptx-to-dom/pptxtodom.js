@@ -196,7 +196,7 @@ export const parsingPPTX = async (buffer, options = {
         if (data.worker) data.worker.terminate()
         if (data.timer) clearInterval(data.timer)
         const workerUrl = new URL('./worker/pptx.worker.js', import.meta.url)
-        const worker = data.worker = new Worker(workerUrl, { type: 'classic' })
+        const worker = data.worker = new Worker(workerUrl, { type: 'module' })
         worker.addEventListener('message', event => {
           this.processMessage(event.data)
         }, false)
