@@ -1,7 +1,8 @@
 'use strict'
 
 // import processPptx from '../process.js'
-importScripts('../process.js')
+const workerUrl = new URL('../process.js', import.meta.url)
+importScripts(workerUrl)
 
 processPptx(
   (messageHandler, errorHandler) => {
